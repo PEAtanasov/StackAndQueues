@@ -6,15 +6,15 @@ int result = int.Parse(exppresions.Pop());
 
 while (exppresions.Any())
 {
-    string sign = exppresions.Pop();
+    string commandSign = exppresions.Pop();
     int currentNumber = int.Parse(exppresions.Pop());
 
-    if (sign == "+")
+    if (commandSign == "+")
     {
         result += currentNumber;
 
     }
-    else if (sign == "-")
+    else if (commandSign == "-")
     {
         result -= currentNumber;
 
